@@ -7,6 +7,7 @@ from tensorflow.keras.datasets import mnist
 from tensorflow.keras import backend as K
 import numpy as np
 import matplotlib.pyplot as plt
+import sys
 
 
 # This will work for the models if you download them from the links above.
@@ -61,6 +62,8 @@ def plot_value_array(predictions_array, true_label, h):
     plt.show()
 
 path = "photo.jpg"
+if len(sys.argv) > 1:
+    path = sys.argv[1]
 img = image.load_img(path, target_size=(32, 32), color_mode="rgb")
 img_arr = image.img_to_array(img)
 arr = predict_image(model_1,  img_arr)
