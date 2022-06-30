@@ -24,15 +24,15 @@ Note: Because the images are resized to 32x32 to save processing time, fine deta
 
 
 HOW TO RUN PROGRAM
-Download the files,  unzip it, and open the resulting folder. Inside, put any **SQUARE IMAGE** into the folder. There is a test folder with some starter images that you have to move out into the same folder as the code files. **IT MUST BE A .jpg FILE.** Then, remember to **RENAME THE IMAGE TO photo.jpg**. Next, open command prompt if on windows and terminal on mac. run the command:
+Download the files,  unzip it, and open the resulting folder. Inside, put any **SQUARE IMAGE** into the folder. There is a test folder with some starter images that you have to move out into the same folder as the code files. **IT MUST BE A .jpg FILE.** Note that the default name of the image that is searched for is **photo.jpg**, but an optional filename can be added for a different image. Next, open command prompt if on windows and terminal on mac. run the command:
 
 	cd <directory of the unzipped folder>
 
 making sure to replace with the directory of the unzipped folder. Next, the following command will run the program:
 
-	python "Image Recognition.py"
+	python "Image Recognition.py" <optional filename>
 	
-If you get an error, you might have to install python or if it is already installed, type the following:
+The optional filename can be left out, and the program will default to photo.jpg. If you get an error, you might have to install python or if it is already installed, type the following:
 
 	pip install pip
 	 
