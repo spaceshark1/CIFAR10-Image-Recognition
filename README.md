@@ -43,6 +43,8 @@ The optional filename can be left out, and the program will default to photo.jpg
 	pip install matplotlib
 	
 	pip install keras
+	
+	pip install --upgrade tensorflow
 
 
 
