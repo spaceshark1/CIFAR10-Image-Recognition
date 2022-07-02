@@ -64,7 +64,7 @@ def plot_value_array(predictions_array, true_label, h):
 path = "photo.jpg"
 if len(sys.argv) > 1:
     path = sys.argv[1]
-img = image.load_img(path, target_size=(32, 32), color_mode="rgb")
-img_arr = image.img_to_array(img)
+img = keras.utils.load_img(path, target_size=(32, 32), color_mode="rgb")
+img_arr = keras.utils.img_to_array(img)
 arr = predict_image(model_1,  img_arr)
 plot_value_array(arr, 3, 1)
